@@ -29,42 +29,43 @@ The solution is broken down into multiple components to address the requirements
 
 + **Azure Data Factory (ADF)**: For orchestrating data movement and transformation.
 + **Azure Data Lake Storage (ADLS)**: For storing raw and processed data.
++ **Azure Databricks**: For data processing and transformation.
++ **Azure Synapse Analytics**: For data warehousing and SQL-based analytics.
++ **Power BI**: For interactive data visualization.
++ **Azure Key Vault**: For managing credentials and secrets securely.
++ **SQL Server (On-Premises)**: Source of customer and sales data.
+  
+## Setup Instructions
+**Prerequisites**
++ An Azure account with sufficient credits.
++ Access to an on-premises SQL Server database, preferably with AdventureWorks database restored.
+### Step 1: Azure Environment Setup
+1. Create a new Resource Group in Azure.
+2. Provision the following services:
+   _ Azure Data Factory (ADF).
+   _ Azure Data Lake Storage (ADLS) with bronze, silver, and gold containers.
+   _ Azure Databricks and Azure Synapse Analytics workspaces.
+   _ Azure Key Vault for managing secrets.
 
-**Azure Databricks**: For data processing and transformation.
+### Step 2: Data Ingestion
+1. **SET UP SQL SERVER** :Install SQL Server and SQL Server Management Studio (SSMS). Restore the AdventureWorks database.
+2. **Ingest data with ADF** :Use ADF to create pipelines for extracting data from SQL Server to ADLS (bronze layer).
 
-**Azure Synapse Analytics**: For data warehousing and SQL-based analytics.
-Power BI: For interactive data visualization.
-Azure Key Vault: For managing credentials and secrets securely.
-SQL Server (On-Premises): Source of customer and sales data.
-Setup Instructions
-Prerequisites
-An Azure account with sufficient credits.
-Access to an on-premises SQL Server database, preferably with AdventureWorks database restored.
-Step 1: Azure Environment Setup
-Create a new Resource Group in Azure.
-Provision the following services:
-Azure Data Factory (ADF).
-Azure Data Lake Storage (ADLS) with bronze, silver, and gold containers.
-Azure Databricks and Azure Synapse Analytics workspaces.
-Azure Key Vault for managing secrets.
-Step 2: Data Ingestion
-Install SQL Server and SQL Server Management Studio (SSMS).
-Restore the AdventureWorks database.
-Use ADF to create pipelines for extracting data from SQL Server to ADLS (bronze layer).
-Step 3: Data Transformation
+### Step 3: Data Transformation
 Mount ADLS in Azure Databricks.
 Cleanse and transform data using Databricks Notebooks:
 Process data from bronze to silver (cleansed) and gold (aggregated).
-Step 4: Data Loading and Reporting
+### Step 4: Data Loading and Reporting
 Set up a Synapse SQL pool and load gold layer data for reporting.
 Build Power BI reports to visualize sales performance by gender and product category.
-Step 5: Automation and Monitoring
+### Step 5: Automation and Monitoring
 Use ADF to schedule the data pipeline to run daily.
 Monitor pipeline execution using ADF and Synapse monitoring tools.
-Step 6: Security and Governance
+### Step 6: Security and Governance
 Configure Role-Based Access Control (RBAC) using Azure Active Directory (Entra ID).
-Step 7: End-to-End Testing
+### Step 7: End-to-End Testing
 Insert new records into SQL Server and verify if the data pipeline runs successfully.
 Ensure Power BI is updated with the latest data and insights.
-Conclusion
+
+## Conclusion
 This project implements a data pipeline that allows businesses to track sales trends based on gender and product category, providing actionable insights. The pipeline automates the process, ensuring stakeholders always have up-to-date data. By utilizing Azure services, this solution enhances da
