@@ -26,9 +26,9 @@ The solution is broken down into multiple components to address the requirements
 **Automation**: Schedule the pipeline to run daily via ADF, ensuring stakeholders always have up-to-date data for reporting.
 
 ## Technology Stack
-**Azure Data Factory (ADF)**: For orchestrating data movement and transformation.
 
-**Azure Data Lake Storage (ADLS)**: For storing raw and processed data.
++ **Azure Data Factory (ADF)**: For orchestrating data movement and transformation.
++ **Azure Data Lake Storage (ADLS)**: For storing raw and processed data.
 
 **Azure Databricks**: For data processing and transformation.
 
