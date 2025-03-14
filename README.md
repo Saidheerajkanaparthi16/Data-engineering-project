@@ -2,6 +2,12 @@
 End-to-End Data Engineering Pipeline for Customer Demographics and Sales Analytics using Azure Cloud
 # Project Overview
 This project implements a comprehensive data engineering pipeline on Azure designed to address the business needs of understanding customer demographics, specifically focusing on gender distribution and its influence on product purchases. The pipeline extracts data from an on-premises SQL database, processes it using Azure Databricks, and loads it into Azure Synapse Analytics for reporting and analysis. The final data is visualized in an interactive Power BI dashboard, providing stakeholders with valuable insights into sales by gender and product category.
+## Business Requirements
+The business has identified a gap in understanding customer demographics—specifically, gender distribution and how it influences product purchases. The primary requirements include:
+
+1. **Sales by Gende**r and **Product Category**: A dashboard showcasing total products sold, sales revenue, and gender split among customers.
+2. **Data Filtering**: Allow stakeholders to filter by product category, gender, and date for comprehensive analysis.
+3. **User-Friendly Interface**: Stakeholders should be able to easily interact with the data through Power BI, creating queries based on their preferences.
 ## Solution Overview
 The solution is broken down into multiple components to address the requirements:
 
