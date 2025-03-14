@@ -48,24 +48,35 @@ The solution is broken down into multiple components to address the requirements
    _ Azure Key Vault for managing secrets.
 
 ### Step 2: Data Ingestion
+
 1. **SET UP SQL SERVER** :Install SQL Server and SQL Server Management Studio (SSMS). Restore the AdventureWorks database.
 2. **Ingest data with ADF** :Use ADF to create pipelines for extracting data from SQL Server to ADLS (bronze layer).
 
 ### Step 3: Data Transformation
-Mount ADLS in Azure Databricks.
-Cleanse and transform data using Databricks Notebooks:
+
+1.**Mount data in Databricks**: Mount ADLS in Azure Databricks.
+2.**Transform Data**: Cleanse and transform data using Databricks Notebooks:
 Process data from bronze to silver (cleansed) and gold (aggregated).
+
 ### Step 4: Data Loading and Reporting
-Set up a Synapse SQL pool and load gold layer data for reporting.
-Build Power BI reports to visualize sales performance by gender and product category.
+
+1. **Load Data into Synapse** : Set up a Synapse SQL pool and load gold layer data for reporting.
+2. **Create Power BI Dashboard**: Build Power BI reports to visualize sales performance by gender and product category.
+
 ### Step 5: Automation and Monitoring
-Use ADF to schedule the data pipeline to run daily.
-Monitor pipeline execution using ADF and Synapse monitoring tools.
+
+1. **Schedule Pipelines**: Use ADF to schedule the data pipeline to run daily.
+2. **Monitor Pipelines**: Monitor pipeline execution using ADF and Synapse monitoring tools.
+   
 ### Step 6: Security and Governance
-Configure Role-Based Access Control (RBAC) using Azure Active Directory (Entra ID).
+
+1. **Manage Access**: Configure Role-Based Access Control (RBAC) using Azure Active Directory (Entra ID
+
 ### Step 7: End-to-End Testing
-Insert new records into SQL Server and verify if the data pipeline runs successfully.
+
+1. **Trigger and Test Pipelines**: Insert new records into SQL Server and verify if the data pipeline runs successfully.
 Ensure Power BI is updated with the latest data and insights.
 
 ## Conclusion
+
 This project implements a data pipeline that allows businesses to track sales trends based on gender and product category, providing actionable insights. The pipeline automates the process, ensuring stakeholders always have up-to-date data. By utilizing Azure services, this solution enhances da
