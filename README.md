@@ -9,8 +9,12 @@ The solution is broken down into multiple components to address the requirements
 1. Extract data from an on-premises SQL database. 
 2. Load the data into Azure Data Lake Storage (ADLS) using Azure Data Factory (ADF).
 
-**Data Transformation**: Use Azure Databricks to clean and transform the data. Organize the data into Bronze, Silver, and Gold layers to ensure data quality and accessibility.
+**Data Transformation**:
+1. Use Azure Databricks to clean and transform the data.
+2. Organize the data into Bronze, Silver, and Gold layers to ensure data quality and accessibility.
 
-**Data Loading and Reporting**: Load the transformed data into Azure Synapse Analytics for efficient analysis. Use Power BI to visualize KPIs related to sales by gender and product category, meeting business requirements.
+**Data Loading and Reporting**:
+1. Load the transformed data into Azure Synapse Analytics for efficient analysis.
+2. Use Power BI to visualize KPIs related to sales by gender and product category, meeting business requirements.
 
 **Automation**: Schedule the pipeline to run daily via ADF, ensuring stakeholders always have up-to-date data for reporting.
