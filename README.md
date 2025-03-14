@@ -9,6 +9,8 @@ The business has identified a gap in understanding customer demographics—speci
 2. **Data Filtering**: Allow stakeholders to filter by product category, gender, and date for comprehensive analysis.
 3. **User-Friendly Interface**: Stakeholders should be able to easily interact with the data through Power BI, creating queries based on their preferences.
 ## Solution Overview
+![arch-Photoroom](https://github.com/user-attachments/assets/07c87862-8d95-44fd-b0c6-e60d6e8aa4d3)
+
 The solution is broken down into multiple components to address the requirements:
 
 **Data Ingestion**: 
