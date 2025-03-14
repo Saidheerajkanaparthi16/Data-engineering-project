@@ -5,7 +5,9 @@ This project implements a comprehensive data engineering pipeline on Azure desig
 ## Solution Overview
 The solution is broken down into multiple components to address the requirements:
 
-**Data Ingestion**: Extract data from an on-premises SQL database. Load the data into Azure Data Lake Storage (ADLS) using Azure Data Factory (ADF).
+**Data Ingestion**: 
+_Extract data from an on-premises SQL database. 
+_Load the data into Azure Data Lake Storage (ADLS) using Azure Data Factory (ADF).
 
 **Data Transformation**: Use Azure Databricks to clean and transform the data. Organize the data into Bronze, Silver, and Gold layers to ensure data quality and accessibility.
 
