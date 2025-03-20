@@ -57,6 +57,7 @@ The solution is broken down into multiple components to address the requirements
 ### Step 3: Data Transformation
 
 1.**Mount data in Databricks**: Mount ADLS in Azure Databricks.
+
 2.**Transform Data**: Cleanse and transform data using Databricks Notebooks:
 Process data from bronze to silver (cleansed) and gold (aggregated).
 
