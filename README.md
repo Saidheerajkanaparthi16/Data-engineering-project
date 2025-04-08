@@ -82,4 +82,4 @@ Ensure Power BI is updated with the latest data and insights.
 
 ## Conclusion
 
-This project implements a data pipeline that allows businesses to track sales trends based on gender and product category, providing actionable insights. The pipeline automates the process, ensuring stakeholders always have up-to-date data. By utilizing Azure services, this solution enhances da
+This project implements a data pipeline that allows businesses to track sales trends based on gender and product category, providing actionable insights. The pipeline automates the process, ensuring stakeholders always have up-to-date data. By utilizing Azure services, this solution enhances data descisions
